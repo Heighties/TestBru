@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bruno Loubsens</title>
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo"></div>
+    </header>
+    <section class="home">
+      <nav>
+        <ul>
+          <li><a href="#about" class="btnpre">Présentation</a></li>
+          <li><a href="#projects" class="btnpro">Mes projets</a></li>
+          <li><a href="#contact" class="btncont">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section class="about">
+      <p id="titre">Bruno Loubsens</p>
+      <p id="sous-titre">Dessinateur</p>
+      <div class="mandala"></div>
+    </section>
+    <section class="projects">
+      <main>
+        <h1>Diaporama</h1>
+
+        <!-- Conteneur principal de tout le diaporama -->
+        <div class="diapo">
+          <!-- Conteneur des "diapos" -->
+          <div class="elements">
+            <!-- Première diapo -->
+            <div class="element active">
+              <img src="images/arche.PNG" alt="Image 1" />
+              <div class="caption"></div>
+            </div>
+            <!-- Deuxième diapo -->
+            <div class="element">
+              <img src="images/cercle1.PNG" alt="Image 2" />
+              <div class="caption"></div>
+            </div>
+            <!-- Troisième diapo -->
+            <div class="element">
+              <img src="images/cercle2.PNG" alt="Image 3" />
+              <div class="caption"></div>
+            </div>
+            <!-- Quatrième diapo -->
+            <div class="element">
+              <img src="images/fond1.PNG" alt="Image 2" />
+              <div class="caption"></div>
+            </div>
+          </div>
+          <!-- Flèches de navigation -->
+          <i id="nav-gauche" class="las la-chevron-left"></i>
+          <i id="nav-droite" class="las la-chevron-right"></i>
+        </div>
+      </main>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>

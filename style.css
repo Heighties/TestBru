@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap");
+
+* {
+  font-family: "Love Ya Like A Sister", cursive;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: none;
+  transition: all 0.2s linear;
+}
+
+section {
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 10rem;
+  width: 100%;
+  border-bottom: 00.1rem solid black;
+}
+
+.logo {
+  position: left;
+  background-image: url(images/logo.png);
+  background-size: 122.9px;
+  background-position: 6.9rem 6.75rem;
+  width: 100px;
+  height: 100px;
+  margin-top: 2rem;
+  margin-left: 9.5rem;
+  overflow: hidden;
+  border: 0.1rem solid black;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.9s;
+  -moz-transition: -moz-transform 0.9s;
+  -o-transition: -o-transform 0.9s;
+  -ms-transition: -ms-transform 0.9s;
+  transition: transform 0.9s;
+}
+.logo:hover {
+  -webkit-transform: rotate(540deg);
+  -moz-transform: rotate(540deg);
+  -o-transform: rotate(540deg);
+  -ms-transform: rotate(540deg);
+  transform: rotate(540deg);
+}
+
+/*************HOME************/
+
+/*.home {
+  background-image: url(images/cercle2.PNG);
+  background-repeat: no-repeat;
+  background-size: 30rem;
+  background-position: 48.5rem 7.5rem;
+}*/
+.home {
+  text-align: center;
+}
+
+.home nav ul {
+  background-image: url(gif/cerclegif3.gif);
+  background-repeat: no-repeat;
+  background-position: 670px 00px;
+  background-size: 700px;
+  padding-top: 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 3rem;
+}
+
+.home li {
+  list-style-type: none;
+}
+
+.home a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+
+/*********ABOUT*********/
+
+#titre {
+  font-size: 5rem;
+  margin-left: 5rem;
+  margin-top: 20rem;
+}
+
+#sous-titre {
+  font-size: 3rem;
+  margin-left: 9rem;
+  margin-top: -3rem;
+}
+.mandala {
+  display: flex;
+  justify-content: right;
+  height: 40rem;
+  width: 40rem;
+  margin-left: 55rem;
+  margin-top: -25rem;
+  background-image: url(images/mandala.PNG);
+  background-size: 40rem;
+  background-repeat: no-repeat;
+  -webkit-animation: spin 50s linear infinite;
+  -moz-animation: spin 50s linear infinite;
+  animation: spin 50s linear infinite;
+  clip-path: circle(60% at 50% 50%);
+  position: absolute;
+  z-index: 1;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+/*.home {
+  background: url(images/arche.PNG);
+  background-size: 100rem;
+  background-position: 4rem -7rem;
+  width: 100rem;
+  height: 0rem;
+}*/
+
+/*cercle tourne*/
+
+/*body > #test {
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+  background-image: url(images/cercle1.PNG);
+  background-size: 41.5%;
+  background-position: 35rem 5.9rem;
+  -webkit-animation: spin 15s linear infinite;
+  -moz-animation: spin 15s linear infinite;
+  animation: spin 15s linear infinite;
+  clip-path: circle(15% at 50% 50%);
+  position: absolute;
+  z-index: 1;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}*/
+
+/**************PROJETCS**************/
+main {
+  width: 50%;
+  margin: 25%;
+}
+
+.diapo {
+  position: relative;
+  overflow: hidden;
+}
+
+#nav-droite,
+#nav-gauche {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(0, 0, 0);
+  font-size: 3em;
+}
+
+#nav-droite {
+  right: 20px;
+}
+#nav-gauche {
+  left: 20px;
+}
+
+.elements {
+  display: flex;
+  transition: 1s linear;
+}
+
+.element {
+  flex: 1 0 100%;
+  position: relative;
+  left: 25%;
+}
+
+.element > img {
+  width: 50%;
+}
