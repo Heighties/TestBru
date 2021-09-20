@@ -173,6 +173,12 @@ header {
 }*/
 
 /**************PROJETCS**************/
+
+.projects {
+  display: flex;
+  justify-content: center;
+}
+
 main {
   width: 50%;
   margin: 25%;

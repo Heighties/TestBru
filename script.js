@@ -1,3 +1,31 @@
+ //smooth scrolling
+
+ $('a[href*="#"]').on('click',function(e){
+
+    e.preventDefault();
+
+    $('html, body').animate({
+
+        scrollTop : $($(this).attr('href')).offset().top,
+
+    },
+    500,
+    'linear'
+    
+    );
+
+
+});
+ 
+
+//PARALAX
+
+var image = document.getElementsByClassName('mer');
+new simpleParallax(image, {
+	overflow: true
+});
+
+
 // DIAPO
 
 let compteur = 0 // Compteur qui permettra de savoir sur quelle slide nous sommes
